@@ -13,6 +13,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 $wpbcc_default_colors = array('Classic_Grey', 'Classic_Blue', 'Classic_Turquoise', 'Classic_Green', 'Classic_Orange', 'Classic_Red', 'Classic_Black', 'Blue', 'Turquoise', 'Pink', 'Violet', 'Peacoc', 'Chino', 'Mulled_Wine', 'Vista_Blue', 'Black', 'Grey', 'Orange', 'Sky', 'Green', 'Juicy_pink', 'Sandy_brown', 'Purple', 'White');
 
+function quick_callback(){
+
+	return 0;
+	
+}
+
 	
 add_action( 'admin_menu', 'register_wpbcc_menu' );
 function register_wpbcc_menu(){ add_submenu_page('vc-general','Button Customizer','Button Customizer','manage_options','wpbcc_options','wpbcc_options'); }
